@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.crm.dao.extend.CstCustomerExtendMapper">
+  <!-- 查询四个区域的名称 -->
+  <select id="selectRegion" resultType="String">
+  	SELECT distinct cust_region
+  	from cst_customer
+  </select>
+  
+  
+</mapper>

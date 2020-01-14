@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.briup.crm.dao.extend.SalChanceExtendMapper">
+
+    <resultMap id="SalPlanMap" type="com.briup.crm.bean.SalPlan">
+        <id column="pla_id" jdbcType="BIGINT" property="plaId"/>
+        <result column="pla_chc_id" jdbcType="BIGINT" property="plaChcId"/>
+        <result column="pla_todo" jdbcType="VARCHAR" property="plaTodo"/>
+        <result column="pla_result" jdbcType="VARCHAR" property="plaResult"/>
+    </resultMap>
+
+    <resultMap id="SaleChanceExtendResultMap" type="com.briup.crm.bean.extend.SalChanceExtend">
+        <id column="chc_id" jdbcType="BIGINT" property="chcId"/>
+        <result column="chc_source" jdbcType="VARCHAR" property="chcSource"/>
+        <result column="chc_cust_name" jdbcType="VARCHAR" property="chcCustName"/>
+        <result column="chc_title" jdbcType="VARCHAR" property="chcTitle"/>
+        <result column="chc_rate" jdbcType="INTEGER" property="chcRate"/>
+        <result column="chc_linkman" jdbcType="VARCHAR" property="chcLinkman"/>
+        <result column="chc_tel" jdbcType="VARCHAR" property="chcTel"/>
+        <result column="chc_addr" jdbcType="VARCHAR" property="chcAddr"/>
+        <result column="chc_desc" jdbcType="VARCHAR" property="chcDesc"/>
+        <result column="chc_create_by" jdbcType="VARCHAR" property="chcCreateBy"/>
+        <result column="chc_due_to" jdbcType="VARCHAR" property="chcDueTo"/>
+        <result column="chc_status" jdbcType="INTEGER" property="chcStatus"/>
+        <collection property="plans" column="chc_id" select="findPlansByChanceId"/>
+    </resultMap>
+
+    <select id="findSaleChanceAndPlansByChanceId" resultMap="SaleChanceExtendResultMap"
+            parameterType="long">
+        SELECT *
+        from sal_chance
+        WHERE chc_id = #{0}
+    </select>
+
+    <select id="findPlansByChanceId" resultMap="SalPlanMap" parameterType="long">
+        SELECT *
+        from sal_plan
+        WHERE pla_chc_id = #{0}
+    </select>
+
+</mapper>
