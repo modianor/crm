@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "客户实体类")
 public class CstCustomer {
     /**
      *
@@ -8,6 +12,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户ID",example = "1")
     private Long custId;
 
     /**
@@ -17,6 +22,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户姓名",example = "")
     private String custName;
 
     /**
@@ -26,6 +32,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "地区",example = "")
     private String custRegion;
 
     /**
@@ -35,6 +42,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "处理人ID",example = "1")
     private Long custManagerId;
 
     /**
@@ -44,6 +52,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "处理人姓名",example = "")
     private String custManagerName;
 
     /**
@@ -53,6 +62,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户等级",example = "")
     private String custLevelLabel;
 
     /**
@@ -62,6 +72,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户满意度",example = "1")
     private Integer custSatisfy;
 
     /**
@@ -71,6 +82,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户信用等级",example = "1")
     private Integer custCredit;
 
     /**
@@ -80,6 +92,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户地址",example = "1")
     private String custAddr;
 
     /**
@@ -89,6 +102,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户邮编",example = "")
     private String custZip;
 
     /**
@@ -98,6 +112,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户电话",example = "")
     private String custTel;
 
     /**
@@ -107,6 +122,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户传真",example = "")
     private String custFax;
 
     /**
@@ -116,6 +132,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户网站",example = "")
     private String custWebsite;
 
     /**
@@ -125,6 +142,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "许可证号")
     private String custLicenceNo;
 
     /**
@@ -134,6 +152,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "法人",example = "")
     private String custChieftain;
 
     /**
@@ -143,6 +162,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户资金",example = "1597")
     private Float custBankroll;
 
     /**
@@ -152,6 +172,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户收入",example = "7558")
     private Float custTurnover;
 
     /**
@@ -161,6 +182,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "开户银行",example = "")
     private String custBank;
 
     /**
@@ -170,6 +192,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "银行账户",example = "")
     private String custBankAccount;
 
     /**
@@ -179,6 +202,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "本地税务局号",example = "")
     private String custLocalTaxNo;
 
     /**
@@ -188,6 +212,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "国家税务局号",example = "")
     private String custNationalTaxNo;
 
     /**
@@ -197,6 +222,7 @@ public class CstCustomer {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户状态",example = "")
     private String custStatus;
 
     /**

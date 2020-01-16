@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "服务实体类")
 public class CstService {
     /**
      *
@@ -8,6 +12,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务ID",example = "1")
     private Long svrId;
 
     /**
@@ -17,6 +22,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务类型",example = "")
     private String svrType;
 
     /**
@@ -26,6 +32,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务概要",example = "")
     private String svrTitle;
 
     /**
@@ -35,6 +42,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户名称",example = "")
     private String svrCustName;
 
     /**
@@ -44,6 +52,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务状态",example = "")
     private String svrStatus;
 
     /**
@@ -53,6 +62,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务请求",example = "")
     private String svrRequest;
 
     /**
@@ -62,6 +72,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务处理人",example = "")
     private String svrDispose;
 
     /**
@@ -71,6 +82,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务要求",example = "")
     private String svrHandle;
 
     /**
@@ -80,6 +92,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务结果",example = "")
     private String svrResult;
 
     /**
@@ -89,6 +102,7 @@ public class CstService {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "服务满意度",example = "")
     private String svrSatisfy;
 
     /**

@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "系统角色实体")
 public class SysRole {
     /**
      *
@@ -8,6 +12,7 @@ public class SysRole {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "角色ID",example = "1")
     private Long roleId;
 
     /**
@@ -17,6 +22,7 @@ public class SysRole {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "角色名称",example = "")
     private String roleName;
 
     /**
@@ -26,6 +32,7 @@ public class SysRole {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "角色描述",example = "")
     private String roleDesc;
 
     /**
@@ -35,6 +42,7 @@ public class SysRole {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "角色状态",example = "1")
     private Integer roleFlag;
 
     /**

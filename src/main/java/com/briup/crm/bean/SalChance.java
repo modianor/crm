@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "商机实体类")
 public class SalChance {
     /**
      *
@@ -8,6 +12,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机ID",example = "1")
     private Long chcId;
 
     /**
@@ -17,6 +22,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机来源",example = "")
     private String chcSource;
 
     /**
@@ -26,6 +32,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户姓名",example = "")
     private String chcCustName;
 
     /**
@@ -35,6 +42,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机概要",example = "")
     private String chcTitle;
 
     /**
@@ -44,6 +52,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机成功率",example = "78")
     private Integer chcRate;
 
     /**
@@ -53,6 +62,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "联系人",example = "")
     private String chcLinkman;
 
     /**
@@ -62,6 +72,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "联系电话",example = "")
     private String chcTel;
 
     /**
@@ -71,6 +82,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "地址",example = "")
     private String chcAddr;
 
     /**
@@ -80,6 +92,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机描述",example = "")
     private String chcDesc;
 
     /**
@@ -89,6 +102,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "创建者",example = "")
     private String chcCreateBy;
 
     /**
@@ -98,6 +112,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机经理",example = "")
     private String chcDueTo;
 
     /**
@@ -107,6 +122,7 @@ public class SalChance {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "商机状态",example = "1")
     private Integer chcStatus;
 
     /**

@@ -1,7 +1,13 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "用户贡献实体")
 public class Contribution {
+	@ApiModelProperty(value = "用户名称",example = "")
 	private String name;
+	@ApiModelProperty(value = "贡献值",example = "0.5")
 	private float y;
 	@Override
 	public String toString() {

@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "计划实体类")
 public class SalPlan {
     /**
      *
@@ -8,6 +12,7 @@ public class SalPlan {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "计划ID",example = "1")
     private Long plaId;
 
     /**
@@ -17,6 +22,7 @@ public class SalPlan {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "计划所属商机ID",example = "1")
     private Long plaChcId;
 
     /**
@@ -26,6 +32,7 @@ public class SalPlan {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "计划操作",example = "")
     private String plaTodo;
 
     /**
@@ -35,6 +42,7 @@ public class SalPlan {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "计划结果",example = "")
     private String plaResult;
 
     /**

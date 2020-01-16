@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "活动实体类")
 public class CstActivity {
     /**
      *
@@ -8,6 +12,7 @@ public class CstActivity {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "活动ID",example = "1")
     private Long atvId;
 
     /**
@@ -17,6 +22,7 @@ public class CstActivity {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户姓名",example = "")
     private String atvCustName;
 
     /**
@@ -26,6 +32,7 @@ public class CstActivity {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "活动地点",example = "")
     private String atvPlace;
 
     /**
@@ -35,6 +42,7 @@ public class CstActivity {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "活动概要",example = "")
     private String atvTitle;
 
     /**
@@ -44,6 +52,7 @@ public class CstActivity {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "活动描述",example = "")
     private String atvMemo;
 
     /**
@@ -53,6 +62,7 @@ public class CstActivity {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户ID",example = "1")
     private Long atvCustId;
 
     /**

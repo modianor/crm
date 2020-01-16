@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "联系人实体类")
 public class CstLinkman {
     /**
      *
@@ -8,6 +12,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "联系人ID",example = "1")
     private Long lkmId;
 
     /**
@@ -17,6 +22,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户ID",example = "1")
     private Long lkmCustId;
 
     /**
@@ -26,6 +32,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "客户姓名",example = "")
     private String lkmName;
 
     /**
@@ -35,6 +42,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "性别",example = "")
     private String lkmSex;
 
     /**
@@ -44,6 +52,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "职务",example = "")
     private String lkmPostion;
 
     /**
@@ -53,6 +62,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "联系电话",example = "")
     private String lkmTel;
 
     /**
@@ -62,6 +72,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "联系手机",example = "")
     private String lkmMobile;
 
     /**
@@ -71,6 +82,7 @@ public class CstLinkman {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "联系人描述",example = "")
     private String lkmMemo;
 
     /**

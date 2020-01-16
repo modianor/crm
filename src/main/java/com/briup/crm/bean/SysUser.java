@@ -1,5 +1,9 @@
 package com.briup.crm.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(value = "系统用户实体类")
 public class SysUser {
     /**
      *
@@ -8,6 +12,7 @@ public class SysUser {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "用户ID",example = "1")
     private Long usrId;
 
     /**
@@ -17,6 +22,7 @@ public class SysUser {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "用户名",example = "")
     private String usrName;
 
     /**
@@ -26,6 +32,7 @@ public class SysUser {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "密码",example = "")
     private String usrPassword;
 
     /**
@@ -35,6 +42,7 @@ public class SysUser {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "用户角色",example = "")
     private String usrRoleName;
 
     /**
@@ -44,6 +52,7 @@ public class SysUser {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "用户状态",example = "1")
     private Integer usrFlag;
 
     /**
@@ -53,6 +62,7 @@ public class SysUser {
      *
      * @mbg.generated Thu Jan 02 09:35:24 GMT+08:00 2020
      */
+    @ApiModelProperty(value = "用户角色ID",example = "1")
     private Long usrRoleId;
 
     /**
